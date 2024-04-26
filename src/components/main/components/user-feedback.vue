@@ -1,34 +1,14 @@
+<!--
+ * @Author: chengfei
+ * @Date: 2024-04-27 00:26:42
+ * @LastEditTime: 2024-04-27 00:32:52
+ * @LastEditors: chengfei
+ * @Description: 
+ * @FilePath: \earthworm\src\components\main\components\user-feedback.vue
+-->
 <template>
   <div>
     <h2>用户反馈</h2>
-            <span class="cuf-desc">如果您正在使用 Earthworm ，请随时在 Twitter 上向我们提供您的反馈!</span>        
-    <div class="cuf-wrapper">
-               
-      <div class="cw-left-box">
-                   
-        <div class="clb-header">
-                       
-          <div class="avatar"></div>
-                       
-          <div class="user-info"></div>
-                       
-          <div class="icon"></div>
-                     
-        </div>
-                   
-        <div class="clb-main"></div>
-                   
-        <div class="clb-time"></div>
-                   
-        <div class="clb-action"></div>
-                 
-      </div>
-               
-      <div class="cufw-center-box"></div>
-               
-      <div class="cufw-right-box"></div>
-             
-    </div>
   </div>
 </template>
 
