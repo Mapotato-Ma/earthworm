@@ -1,0 +1,140 @@
+*,
+::after,
+::before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('@/assets/fonts/Nunito-Bold.AvpZBBGS.woff2');
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: CustomFont, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* 白天 */
+:root {
+  --color-text: rgb(107 114 128);
+  --color-text-header: rgb(71, 85, 105);
+  --color-text-enhance: rgb(0, 0, 0);
+  --background-color: #FFF;
+  background: var(--background-color);
+}
+
+/* 夜间 */
+:root.dark {
+  --color-text: rgb(209, 213, 219);
+  --color-text-header: rgb(255, 255, 255);
+  --color-text-enhance: #d7bcf2;
+  --background-color: rgb(5, 5, 29);
+}
+
+::view-transition-image-pair(root) {
+  isolation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+  display: block;
+}
+
+::view-transition-old(root),
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+
+html,
+body {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: var(--color-text);
+  font-family: CustomFont, sans-serif;
+  /* 由冰冻大西瓜添加平滑滚动,让锚点跳转更加友好 */
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.3rem;
+  color: var(--color-text);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  transition: background-color 233ms;
+  display: grid;
+  place-content: center;
+
+  &:hover {
+    color: var(--color-text);
+    outline: none;
+    background-color: #25273c;
+  }
+}
+
+/* 按钮背景动画 */
+@keyframes moveBg {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* 星星 */
+@keyframes moveStarTop {
+  100% {
+    transform: translateY(-500px);
+  }
+}
+
+/* 星星 */
+@keyframes moveStarRotate {
+  100% {
+    transform: rotate(-1turn);
+  }
+}

@@ -1,0 +1,238 @@
+/* 头部 */
+.header {
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  padding-top: 8px;
+
+  .h-content {
+    max-width: 1280px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &>div {
+      display: flex;
+      align-items: center;
+    }
+
+    .h-left {
+      gap: 24px;
+
+      h1 {
+        color: var(--color-text-header);
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+
+    .h-right {
+      a {
+        color: var(--color-text-header);
+        display: inline-block;
+        padding: 0 1rem;
+      }
+
+      &>button.login {
+        color: #FFF;
+        padding: 10px 20px;
+        background-color: #9333ea;
+        margin-left: 1.25rem;
+        font-family: CustomFont, sans-serif;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+      }
+
+      /* 主题按钮 */
+      button.theme svg {
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      button.theme.dark {
+        .sun {
+          display: none;
+        }
+
+        .moon {
+          display: block;
+        }
+      }
+
+      button.theme.light {
+        .sun {
+          display: block;
+        }
+
+        .moon {
+          display: none;
+        }
+      }
+
+    }
+  }
+}
+
+/* 内容区域 */
+.content {
+  max-width: 1280px;
+  height: 2000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 112px;
+
+  h2 {
+    background: linear-gradient(to right, #af6aed, #d7bcf2);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 42px;
+  }
+
+  .c-split-line {
+    position: relative;
+    margin: 6rem auto 0;
+    width: 1.5rem;
+    height: 0.5rem;
+    background: #FFF;
+    border-radius: 999999999rem;
+    border: 4px solid #05051d;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      width: 1280px;
+      height: 2px;
+      opacity: 0.75;
+      z-index: -1;
+      background: linear-gradient(to right, transparent 0, var(--color-text) 20%, var(--color-text) 80%, transparent 100%);
+      clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+    }
+  }
+}
+
+
+.c-banner {
+  display: flex;
+  flex-direction: column;
+
+  .cb-text {
+    margin-top: 1.25rem;
+
+    p {
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+
+      span {
+        color: var(--color-text-enhance);
+      }
+    }
+  }
+
+  .c-start {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 40px;
+
+    .c-start-button {
+      cursor: pointer;
+      position: relative;
+      width: 210px;
+      height: 48px;
+      color: #fff;
+      font-family: Avalors Personal Use;
+      font-size: 15px;
+      letter-spacing: 5px;
+      z-index: 2;
+      padding: 0 8px;
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.5rem;
+      border-radius: 999999999rem;
+      animation: moveBg 5s ease infinite;
+      background-clip: padding-box, border-box;
+      background-image: linear-gradient(#05051d, #05051d), linear-gradient(137.48deg, #ffdb3b 10%, #fe53bb 45%, #8f51ea 67%, #04f 87%);
+      background-origin: border-box;
+      background-size: 300% 300%;
+      border: 4px double transparent;
+      transition: scale 0.3s;
+      overflow: hidden;
+
+      &:hover {
+        scale: 1.1;
+      }
+
+      .c-btn-text {
+        z-index: 1;
+      }
+
+      #container-stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -510px;
+          left: -500px;
+          width: 1000px;
+          height: 1000px;
+          background: radial-gradient(circle, #fff 1px, transparent 1%);
+          background-size: 50px 50px;
+          background-position: 50% 50%;
+          animation: moveStarTop 20s linear infinite;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -280px;
+          left: -660px;
+          width: 1000px;
+          height: 1000px;
+          background: radial-gradient(circle, #fff 1px, transparent 1%);
+          background-size: 50px 50px;
+          background-position: 50% 50%;
+          animation: moveStarRotate 30s linear infinite;
+        }
+      }
+    }
+
+    .c-start-title {
+      width: 144px;
+    }
+  }
+
+  .c-computer {
+    margin: 0 auto;
+    width: 1200px;
+
+    img {
+      width: 75%;
+    }
+  }
+}
+
+.c-quession {
+  
+}
+
+.c-about{
+  width: 1152px;
+  margin: 0 auto;
+}
