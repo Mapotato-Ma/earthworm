@@ -44,6 +44,8 @@ html {
   --color-icon-border-info:rgb(209, 213, 219);
   --color-icon-fill: #000;
   --background-color: #fff;
+  --color-text-question-title:rgb(75,85,99);
+
   background: var(--background-color);
 }
 
@@ -57,6 +59,7 @@ html {
   --color-text-p-info:var(--color-text-header);
   --color-icon-border-info:rgb(31 41 55);;
   --color-icon-fill: #fff;
+  --color-text-question-title:#fff;
   --background-color: rgb(5, 5, 29);
 }
 
