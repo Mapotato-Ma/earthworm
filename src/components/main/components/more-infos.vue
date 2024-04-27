@@ -220,12 +220,12 @@
       p {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        color: rgb(31 41 55);
+        color: var(--color-text-info);
       }
     }
   }
   section {
-    color: rgb(107 114 128);
+    color: var(--color-text);
     padding: 4rem 0;
 
     .grid {
@@ -240,9 +240,9 @@
 
         .shrink-0 {
           flex-shrink: 0;
-          color: rgb(192 132 252);
+          color: var(--color-icon-info);
           padding: 0.5rem;
-          border: 1px solid rgb(209 213 219);
+          border: 1px solid var(--color-icon-border-info);
           border-radius: 0.5rem;
         }
       }
@@ -252,11 +252,11 @@
           font-size: 18px;
           font-weight: 700;
           line-height: 1.75rem;
-          color: #6b7280;
+          color: var(--color-text-header);
         }
         p {
           opacity: 0.9;
-          color: rgb(107 114 128);
+          color: var(--color-text-p-info);
           font-size: 14px;
           line-height: 1.25rem;
           margin-top: 0.25rem;
