@@ -26,6 +26,7 @@ textarea {
 
 html {
   font-size: 14px;
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 *::-webkit-scrollbar {
@@ -34,9 +35,10 @@ html {
 
 /* 白天 */
 :root {
-  --color-text: rgb(107 114 128);
+  --color-text: rgb(107, 114, 128);
   --color-text-header: rgb(71, 85, 105);
   --color-text-enhance: rgb(0, 0, 0);
+  --color-icon-fill: #000;
   --background-color: #FFF;
   background: var(--background-color);
 }
@@ -46,6 +48,7 @@ html {
   --color-text: rgb(209, 213, 219);
   --color-text-header: rgb(255, 255, 255);
   --color-text-enhance: #d7bcf2;
+  --color-icon-fill: #FFF;
   --background-color: rgb(5, 5, 29);
 }
 
@@ -136,5 +139,29 @@ button {
 @keyframes moveStarRotate {
   100% {
     transform: rotate(-1turn);
+  }
+}
+
+/* typing 动画 */
+
+@keyframes typing {
+  0% {
+    border-color: transparent;
+  }
+
+  49% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgba(228, 110, 255, .75);
+  }
+
+  99% {
+    border-color: rgba(228, 110, 255, .75);
+  }
+
+  100% {
+    border-color: transparent;
   }
 }

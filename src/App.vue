@@ -8,7 +8,6 @@ import Main from '@com/main/index.vue';
   <!-- 模态框 -->
   <!-- <dialog></dialog> -->
   <Main />
-  <footer>Copyright © 2023-2024, Earthworm. All rights reserved.</footer>
 </template>
 
 <style scoped></style>

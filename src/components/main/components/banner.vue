@@ -58,7 +58,7 @@
       font-family: Avalors Personal Use;
       font-size: 14px;
       letter-spacing: 5px;
-      z-index: 2;
+      z-index: -1;
       padding: 0 8px;
       backdrop-filter: blur(8px);
       display: flex;
