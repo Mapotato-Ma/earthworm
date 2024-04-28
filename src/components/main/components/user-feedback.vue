@@ -1,7 +1,7 @@
 <!--
  * @Author: chengfei
  * @Date: 2024-04-27 00:26:42
- * @LastEditTime: 2024-04-28 20:51:50
+ * @LastEditTime: 2024-04-28 21:52:33
  * @LastEditors: chengfei
  * @Description: 
  * @FilePath: \earthworm\src\components\main\components\user-feedback.vue
@@ -19,7 +19,7 @@
         <blockquote class="user-box">
           <div class="p-6">
             <div class="gap-4">
-              <img class="avatar" src="@/assets/images/feedback/cuixiaorui.webp" alt="头像"></img>
+              <img class="avatar" :src="item.src" alt="头像"></img>
               <div class="flex-grow">
                 <p class="user-name">{{ item.name }}</p>
                 <p class="user-count text-xs">{{ item.count }}</p>
@@ -55,6 +55,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import {HazelLin, Nauxscript, cuixiaorui, fengstats, hildxd, vampirewy, yaolifeng0629, zclsx, zuowendong} from '@/assets/images/feedback'
 
 const userBox = ref([
   {
@@ -63,7 +64,8 @@ const userBox = ref([
     content: ' Earthworm 不仅仅是一个工具;这是一次进入语言学习核心的旅程，让每个句子和连词都成为一次冒险。凭借其令人上瘾的游戏玩法，它不仅是一种练习，而且是一种日常习惯，邀请您更深入地了解英语的丰富性！',
     time: '6:06 PM · Feb 20, 2024',
     likes: '1342 likes',
-    aText: "See cuixiaorui's"
+    aText: "See cuixiaorui's",
+    src:cuixiaorui,
   },
   {
     name: 'fengstats',
@@ -71,7 +73,8 @@ const userBox = ref([
     content: '我简直被这款应用迷住了！这种渐进式的学习方式，让每个阶段都充满挑战，同时也让我有了一种强烈的成就感。我已经不能停下学习的脚步，我渴望一点点的进步，希望能更上一层楼！',
     time: '2:17 PM · Feb 20, 2024',
     likes: '197 likes',
-    aText: "See fengstats's"
+    aText: "See fengstats's",
+    src: fengstats
   },
   {
     name: 'zclsx',
@@ -79,7 +82,8 @@ const userBox = ref([
     content: '这个应用克服了英语学习的枯燥，我现在刷课程刷得停不下来。',
     time: '6:31 PM · Jan 23, 2024',
     likes: '79 likes',
-    aText: "See jiushi21's"
+    aText: "See jiushi21's",
+    src: zclsx
   },
   {
     name: 'Nauxscript',
@@ -87,7 +91,8 @@ const userBox = ref([
     content: '现在我每天都要浏览这个应用程序，我觉得我的英语突飞猛进，有趣又充满成就感。我希望能够加入和我一样学习后进行打卡分享，会上瘾的！',
     time: '11:38 AM · Feb 3, 2024',
     likes: '520 likes',
-    aText: "See Nauxscript's"
+    aText: "See Nauxscript's",
+    src: Nauxscript
   },
   {
     name: 'Ims',
@@ -95,7 +100,8 @@ const userBox = ref([
     content: '如此有趣又充实的英语学习应用，真是让人不知所措。我现在每天都在练习，这已经成为一种习惯。棒！',
     time: '4:51 PM · Feb 2, 2024',
     likes: '98 likes',
-    aText: "See Immersecode's"
+    aText: "See Immersecode's",
+    src: yaolifeng0629
   },
   {
     name: 'vampirewy',
@@ -103,7 +109,8 @@ const userBox = ref([
     content: '通过句子拆分进行学习，我感觉我刷课之后，对句子的理解更加深刻。这种感觉是潜移默化的，当我第二天打开，每次都会变得更加流畅！',
     time: '9:22 AM · Jan 9, 2024',
     likes: '86 likes',
-    aText: "See vampirewy's"
+    aText: "See vampirewy's",
+    src: vampirewy
   },
   {
     name: 'hildxd',
@@ -111,7 +118,8 @@ const userBox = ref([
     content: '再也没有像现在这样，我对学习如此充满热情。这个应用真是把学习变得如此有趣，每一次学习都像是一种挑战，让我无法抗拒。这种感觉太棒了，我能够一直刷课程而不觉得无聊',
     time: '11:56 PM · Mar 8, 2024',
     likes: '486 likes',
-    aText: "See hildxd's"
+    aText: "See hildxd's",
+    src: hildxd
   },
   {
     name: 'zuowendong',
@@ -119,7 +127,8 @@ const userBox = ref([
     content: '我真的无法抵抗这款连词造句的英语学习应用的魔力，每天闲下来的时候，我都会习惯性地打开这款应用，忍不住去挑战一下自己，这对我来说是一种全新的娱乐方式！',
     time: '9:59 AM · Feb 22, 2024',
     likes: '232 likes',
-    aText: "See zuowendong's"
+    aText: "See zuowendong's",
+    src: zuowendong
   },
   {
     name: 'Hazel-Lin',
@@ -127,7 +136,8 @@ const userBox = ref([
     content: '真没想到学习英语可以这么有趣，这个连词造句的方式简直让我停不下来。',
     time: '4:10 AM · Dec 22, 2023',
     likes: '78 likes',
-    aText: "See HazelLin's"
+    aText: "See HazelLin's",
+    src: HazelLin
   },
 ])
 </script>
