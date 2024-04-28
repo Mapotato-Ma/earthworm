@@ -51,6 +51,8 @@ html {
   --color-feedback-like-text: #9ca3af;
   --color-feedback-like-a: #3b82f6;
   --background-color: #fff;
+  --color-text-question-title:rgb(75,85,99);
+
   background: var(--background-color);
 }
 
@@ -71,6 +73,7 @@ html {
   --color-feedback-like: rgb(147 197 253);
   --color-feedback-like-text: #6b7280;
   --color-feedback-like-a: #60a5fa;
+  --color-text-question-title:#fff;
   --background-color: rgb(5, 5, 29);
 }
 
