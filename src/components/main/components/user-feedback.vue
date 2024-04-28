@@ -19,7 +19,7 @@
         <blockquote class="user-box">
           <div class="p-6">
             <div class="gap-4">
-              <img class="avatar" :src="item.src" alt="头像"></img>
+              <img class="avatar" :src="item.src" alt="头像" />
               <div class="flex-grow">
                 <p class="user-name">{{ item.name }}</p>
                 <p class="user-count text-xs">{{ item.count }}</p>
@@ -39,7 +39,9 @@
             <div class="flex action">
               <div class="like-icon">
                 <svg class="icon" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  ></path>
                 </svg>
                 <span>{{ item.likes }}</span>
               </div>
@@ -49,32 +51,43 @@
         </blockquote>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import {HazelLin, Nauxscript, cuixiaorui, fengstats, hildxd, vampirewy, yaolifeng0629, zclsx, zuowendong} from '@/assets/images/feedback'
+import {
+  HazelLin,
+  Nauxscript,
+  cuixiaorui,
+  fengstats,
+  hildxd,
+  vampirewy,
+  yaolifeng0629,
+  zclsx,
+  zuowendong,
+} from '../../../assets/images/feedback';
 
 const userBox = ref([
   {
     name: 'cuixiaorui',
     count: '@cuixiaorui',
-    content: ' Earthworm 不仅仅是一个工具;这是一次进入语言学习核心的旅程，让每个句子和连词都成为一次冒险。凭借其令人上瘾的游戏玩法，它不仅是一种练习，而且是一种日常习惯，邀请您更深入地了解英语的丰富性！',
+    content:
+      ' Earthworm 不仅仅是一个工具;这是一次进入语言学习核心的旅程，让每个句子和连词都成为一次冒险。凭借其令人上瘾的游戏玩法，它不仅是一种练习，而且是一种日常习惯，邀请您更深入地了解英语的丰富性！',
     time: '6:06 PM · Feb 20, 2024',
     likes: '1342 likes',
     aText: "See cuixiaorui's",
-    src:cuixiaorui,
+    src: cuixiaorui,
   },
   {
     name: 'fengstats',
     count: '@fengstats',
-    content: '我简直被这款应用迷住了！这种渐进式的学习方式，让每个阶段都充满挑战，同时也让我有了一种强烈的成就感。我已经不能停下学习的脚步，我渴望一点点的进步，希望能更上一层楼！',
+    content:
+      '我简直被这款应用迷住了！这种渐进式的学习方式，让每个阶段都充满挑战，同时也让我有了一种强烈的成就感。我已经不能停下学习的脚步，我渴望一点点的进步，希望能更上一层楼！',
     time: '2:17 PM · Feb 20, 2024',
     likes: '197 likes',
     aText: "See fengstats's",
-    src: fengstats
+    src: fengstats,
   },
   {
     name: 'zclsx',
@@ -83,16 +96,17 @@ const userBox = ref([
     time: '6:31 PM · Jan 23, 2024',
     likes: '79 likes',
     aText: "See jiushi21's",
-    src: zclsx
+    src: zclsx,
   },
   {
     name: 'Nauxscript',
     count: '@Nauxscript',
-    content: '现在我每天都要浏览这个应用程序，我觉得我的英语突飞猛进，有趣又充满成就感。我希望能够加入和我一样学习后进行打卡分享，会上瘾的！',
+    content:
+      '现在我每天都要浏览这个应用程序，我觉得我的英语突飞猛进，有趣又充满成就感。我希望能够加入和我一样学习后进行打卡分享，会上瘾的！',
     time: '11:38 AM · Feb 3, 2024',
     likes: '520 likes',
     aText: "See Nauxscript's",
-    src: Nauxscript
+    src: Nauxscript,
   },
   {
     name: 'Ims',
@@ -101,34 +115,37 @@ const userBox = ref([
     time: '4:51 PM · Feb 2, 2024',
     likes: '98 likes',
     aText: "See Immersecode's",
-    src: yaolifeng0629
+    src: yaolifeng0629,
   },
   {
     name: 'vampirewy',
     count: '@vampirewy',
-    content: '通过句子拆分进行学习，我感觉我刷课之后，对句子的理解更加深刻。这种感觉是潜移默化的，当我第二天打开，每次都会变得更加流畅！',
+    content:
+      '通过句子拆分进行学习，我感觉我刷课之后，对句子的理解更加深刻。这种感觉是潜移默化的，当我第二天打开，每次都会变得更加流畅！',
     time: '9:22 AM · Jan 9, 2024',
     likes: '86 likes',
     aText: "See vampirewy's",
-    src: vampirewy
+    src: vampirewy,
   },
   {
     name: 'hildxd',
     count: '@hildxd',
-    content: '再也没有像现在这样，我对学习如此充满热情。这个应用真是把学习变得如此有趣，每一次学习都像是一种挑战，让我无法抗拒。这种感觉太棒了，我能够一直刷课程而不觉得无聊',
+    content:
+      '再也没有像现在这样，我对学习如此充满热情。这个应用真是把学习变得如此有趣，每一次学习都像是一种挑战，让我无法抗拒。这种感觉太棒了，我能够一直刷课程而不觉得无聊',
     time: '11:56 PM · Mar 8, 2024',
     likes: '486 likes',
     aText: "See hildxd's",
-    src: hildxd
+    src: hildxd,
   },
   {
     name: 'zuowendong',
     count: '@zuowendong',
-    content: '我真的无法抵抗这款连词造句的英语学习应用的魔力，每天闲下来的时候，我都会习惯性地打开这款应用，忍不住去挑战一下自己，这对我来说是一种全新的娱乐方式！',
+    content:
+      '我真的无法抵抗这款连词造句的英语学习应用的魔力，每天闲下来的时候，我都会习惯性地打开这款应用，忍不住去挑战一下自己，这对我来说是一种全新的娱乐方式！',
     time: '9:59 AM · Feb 22, 2024',
     likes: '232 likes',
     aText: "See zuowendong's",
-    src: zuowendong
+    src: zuowendong,
   },
   {
     name: 'Hazel-Lin',
@@ -137,9 +154,9 @@ const userBox = ref([
     time: '4:10 AM · Dec 22, 2023',
     likes: '78 likes',
     aText: "See HazelLin's",
-    src: HazelLin
+    src: HazelLin,
   },
-])
+]);
 </script>
 
 <style scoped>
@@ -159,8 +176,8 @@ const userBox = ref([
         padding-top: 0.5rem;
       }
     }
-
   }
+
   .mt-8 {
     margin-top: 2rem;
     gap: 2rem;
@@ -205,53 +222,51 @@ const userBox = ref([
               width: 3.5rem;
               height: 3.5rem;
               max-width: 100%;
-              display: block;
               vertical-align: middle;
             }
 
-            .flex-grow{
+            .flex-grow {
               flex-grow: 1;
               text-align: left;
 
-              .user-name{
+              .user-name {
                 margin-top: 0.125rem;
                 font-size: 1.125rem;
                 line-height: 1.75rem;
                 font-weight: 700;
               }
 
-              .user-count{
+              .user-count {
                 font-size: 0.75rem;
                 line-height: 1rem;
                 color: rgb(107 114 128);
               }
             }
 
-            .icon{
+            .icon {
               max-width: 100%;
               height: auto;
-              display: block;
               vertical-align: middle;
-              align-self:flex-start;
+              align-self: flex-start;
               overflow-clip-margin: content-box;
               overflow: clip;
             }
           }
 
-          .mt-4{
+          .mt-4 {
             margin-top: 1rem;
             color: var(--color-feedback-user-content);
             text-align: left;
             line-height: 1.5rem;
           }
 
-          .my-2{
+          .my-2 {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0.5rem 0;
 
-            .time{
+            .time {
               font-size: 0.75rem;
               line-height: 1rem;
               color: rgb(107 114 128);
@@ -267,25 +282,25 @@ const userBox = ref([
             line-height: 1rem;
             margin-top: 2rem;
 
-            .like-icon{
+            .like-icon {
               display: flex;
               align-items: center;
 
-              .icon{
+              .icon {
                 width: 1.25rem;
                 height: 1.25rem;
                 fill: currentColor;
                 color: var(--color-feedback-like);
               }
 
-              span{
+              span {
                 color: var(--color-feedback-like-text);
               }
             }
 
-            .user-a{
-              pointer-events:none;
-              color: var(--color-feedback-like-a)
+            .user-a {
+              pointer-events: none;
+              color: var(--color-feedback-like-a);
             }
           }
         }
