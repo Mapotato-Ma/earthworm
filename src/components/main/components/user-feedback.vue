@@ -1,7 +1,7 @@
 <!--
  * @Author: chengfei
  * @Date: 2024-04-27 00:26:42
- * @LastEditTime: 2024-04-28 02:24:45
+ * @LastEditTime: 2024-04-28 20:51:50
  * @LastEditors: chengfei
  * @Description: 
  * @FilePath: \earthworm\src\components\main\components\user-feedback.vue
@@ -201,6 +201,7 @@ const userBox = ref([
 
             .flex-grow{
               flex-grow: 1;
+              text-align: left;
 
               .user-name{
                 margin-top: 0.125rem;
@@ -230,6 +231,8 @@ const userBox = ref([
           .mt-4{
             margin-top: 1rem;
             color: var(--color-feedback-user-content);
+            text-align: left;
+            line-height: 1.5rem;
           }
 
           .my-2{
